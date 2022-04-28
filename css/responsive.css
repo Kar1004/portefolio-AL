@@ -1,0 +1,161 @@
+@media only screen and (max-width: 600px) {
+  header .account-aside .nav-fix {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .navbar-nav {
+    width: 367px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  .navbar-nav a {
+    text-transform: uppercase;
+    border: 1px rgb(255, 255, 255) dotted;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin: 6px;
+    box-shadow: 0px 3px 3px 2px black;
+  }
+
+  .btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header {
+    height: 538px;
+    width: 416px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+  }
+  header .account-aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  header .account-aside a {
+    padding: 6px;
+    background-color: #fff;
+    margin: 6px;
+    border-radius: 50%;
+    border: 0px solid white;
+    box-shadow: none;
+  }
+  header .account-aside a .git {
+    width: 25px;
+  }
+  header .account-aside img {
+    width: 25px;
+  }
+  header .account-aside .nav-fix {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* position: sticky; */
+  }
+  header .account-aside .about-me {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    align-items: stretch;
+  }
+  header .account-aside .position-1 {
+    position: relative;
+    left: -63px;
+  }
+  header .account-aside p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  section .titre-section {
+    /* text-align: center; */
+    transform: translate(0px, -32px);
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    background-image: url("../public/image/892.png");
+    background-position: center;
+  }
+  section .competence-1 {
+    display: none;
+  }
+  section .competence {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+  }
+  section .competence .competence-img {
+    display: flex;
+    flex-direction: row;
+  }
+  section .competence .front {
+    display: flex;
+  }
+  section .competence .down-road img {
+    width: 50px;
+  }
+  section .formation {
+    width: 100%;
+    height: 146vh;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+  }
+  section .project-all {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  section .showcase .letter {
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  section .formation-title {
+    text-align: center;
+    background-color: #000;
+    font-size: 39px;
+    color: #fff;
+    mix-blend-mode: multiply;
+    text-transform: uppercase;
+  }
+  section .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  section .form {
+    margin-top: 358px;
+  }
+  section .formAll {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+}/*# sourceMappingURL=responsive.css.map */
