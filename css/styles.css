@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --main-color: rgb(255, 255, 255);
+  --main-color: white;
   --color-primary: rgba(43, 88, 59, 0.249);
   --color-secondary: #f3f7f6;
 }
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Indie Flower", cursive;
+  font-family: 'Indie Flower', cursive;
   box-sizing: border-box;
 }
 
@@ -24,6 +24,7 @@ body {
   margin: 12px;
   box-shadow: 0px 3px 3px 2px black;
 }
+
 .btn-grad a:hover {
   background-position: right center;
   color: #fff;
@@ -37,7 +38,7 @@ body {
 }
 
 header {
-  height: 406px;
+  height: 100vh;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -45,16 +46,19 @@ header {
   flex-direction: row;
   background-image: url("../public/image/systéme solaire.svg");
 }
+
 header .opacity {
-  height: 406px;
+  height: 100vh;
   width: auto;
-  background-color: rgba(131, 183, 188, 0.438);
+  background-color: rgba(0, 0, 0, 0.438);
 }
+
 header h1 {
   color: #eee;
 }
+
 header p {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 25px;
   text-align: justify;
   font-weight: bold;
@@ -66,10 +70,12 @@ header p {
   align-items: center;
   padding: 12px;
 }
+
 .account-aside .git {
   width: 54px;
   margin: 8px;
 }
+
 .account-aside a {
   border: 1px solid #000;
   width: 75px;
@@ -83,7 +89,6 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -92,6 +97,7 @@ header p {
   flex-direction: row;
   margin-left: 200px;
 }
+
 .about-me img {
   width: 50%;
   margin: 20px;
@@ -105,11 +111,13 @@ section .titre-section {
   color: white;
   text-transform: uppercase;
 }
+
 section img.astraunote {
   width: 100px;
   transform: rotate(336deg) translateX(268px);
   filter: drop-shadow(-7px -3px 0px black);
 }
+
 section img.dog {
   width: 100px;
   transform: rotate(20deg) translateX(214px);
@@ -117,6 +125,7 @@ section img.dog {
   position: absolute;
   z-index: 4;
 }
+
 section img.cars-fly {
   width: 200px;
   transform: rotateY(171deg) translateX(-69px) translateY(-499px);
@@ -124,26 +133,30 @@ section img.cars-fly {
   position: absolute;
   z-index: 4;
 }
+
 section .competence-1 .shape {
   width: auto;
   height: 400px;
-  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
-          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
   filter: grayscale(50%);
 }
+
 section .competence {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 section .competence .competence-img {
   display: flex;
   flex-direction: row;
 }
+
 section .competence .allskills {
   display: flex;
   flex-wrap: wrap;
 }
+
 section .competence .allskills .down-road {
   display: flex;
   flex-direction: column;
@@ -152,38 +165,53 @@ section .competence .allskills .down-road {
   margin: 40px;
   transition: 1s;
   background-color: #8bc6ec;
+  background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
+
 section .competence .allskills .down-road:hover {
-  transform: scale(1.2) rotate(25deg);
+  transform: scale(1.1) rotate(5deg);
   box-shadow: 1px 0px 6px 0px black;
 }
+
+section .competence .allskills .down-road:hover p {
+  color: white;
+}
+
 section .competence .allskills .down-road img {
   width: 100px;
   border: 2px solid black;
   background-color: white;
   margin: 10px;
   padding: 2px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
+section .competence .allskills .down-road P {
+  transition: 1s;
+}
+
 section .showcase {
   position: relative;
 }
+
 section .showcase .letter {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 section .formation {
   background-image: url("../public/image/project.jpg");
   background-position: center;
   background-size: contain;
 }
+
 section .formation-title {
   text-align: center;
   background-color: #000;
@@ -192,6 +220,7 @@ section .formation-title {
   mix-blend-mode: multiply;
   text-transform: uppercase;
 }
+
 section .formation {
   width: 100%;
   height: 100vh;
@@ -200,11 +229,13 @@ section .formation {
   text-align: justify;
   align-items: center;
 }
+
 section .formation h1 {
   margin: 12px;
   text-align: center;
   font-size: 30px;
 }
+
 section .formation .forming {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   padding: 30px;
@@ -214,6 +245,7 @@ section .formation .forming {
   margin: 20px;
   margin-left: 50px;
 }
+
 section .logo .konexio {
   width: 90px;
   transform: translate(92px, -17px);
@@ -221,6 +253,7 @@ section .logo .konexio {
   border: 2px solid black;
   box-shadow: inset 0px 4px 6px 0px black;
 }
+
 section .logo .G2R {
   width: 80px;
   transform: translate(108px, 46px);
@@ -228,6 +261,7 @@ section .logo .G2R {
   border: 2px solid black;
   box-shadow: inset 0px -2px 3px 0px black;
 }
+
 section .project-all {
   margin-top: 150px;
   width: 100%;
@@ -235,26 +269,30 @@ section .project-all {
   display: flex;
   flex-direction: column;
 }
+
 section h1.project-title {
   text-align: center;
 }
+
 section .showcase {
   position: relative;
 }
+
 section .showcase .letter {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 section .formation {
   background-image: url("../public/image/project.jpg");
   background-position: center;
   background-size: contain;
 }
+
 section .project-title {
   text-align: center;
   background-color: #000;
@@ -264,17 +302,20 @@ section .project-title {
   text-transform: uppercase;
   margin-bottom: 100px;
 }
+
 section .project {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 section .project .piano {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 section .project .piano img.Piano {
   width: 209px;
   height: 229px;
@@ -282,6 +323,7 @@ section .project .piano img.Piano {
   -o-object-fit: contain;
   object-fit: contain;
 }
+
 section .project .rubban {
   position: relative;
   left: 0px;
@@ -289,14 +331,17 @@ section .project .rubban {
   transition: 1s;
   opacity: 1;
 }
+
 section .project .rubban img {
   width: 209px;
   height: 229px;
   transition: 1s;
 }
+
 section .project .rubban:hover {
   opacity: 0;
 }
+
 section .project .rubban a {
   position: absolute;
   color: #ffffff;
@@ -307,25 +352,29 @@ section .project .rubban a {
   font-size: 21px;
   text-transform: uppercase;
 }
+
 section .project .language {
   border: 9px solid #000;
 }
+
 section .project .language img {
   width: 50px;
   height: 50px;
 }
+
 section .showcase {
   position: relative;
 }
+
 section .showcase .letter {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 section .contact-title {
   text-align: center;
   background-color: #000;
@@ -334,31 +383,35 @@ section .contact-title {
   mix-blend-mode: screen;
   text-transform: uppercase;
 }
+
 section .formAll {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: radial-gradient(circle at center center, transparent, rgb(33, 33, 33)), repeating-linear-gradient(135deg, rgb(33, 33, 33) 0px, rgb(33, 33, 33) 2px, transparent 2px, transparent 10px, rgb(33, 33, 33) 10px, rgb(33, 33, 33) 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, rgb(47, 47, 47) 0px, rgb(47, 47, 47) 4px, transparent 4px, transparent 8px), linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+  background-image: radial-gradient(circle at center center, transparent, #212121), repeating-linear-gradient(135deg, #212121 0px, #212121 2px, transparent 2px, transparent 10px, #212121 10px, #212121 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, #2f2f2f 0px, #2f2f2f 4px, transparent 4px, transparent 8px), linear-gradient(90deg, #212121, #212121);
 }
+
 section .formAll .form-message {
   height: 200px;
 }
+
 section .formAll .form-message h1 {
   text-align: center;
 }
+
 section .formAll .form-message .mail {
   width: 100px;
   background-color: #feffff;
   filter: drop-shadow(2px 4px 6px black);
   border: 7px dashed black;
   border-radius: 40%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
 section .formAll img.rocket {
   width: 100px;
   background-color: #feffff;
   border-radius: 50%;
   border: 7px dashed black;
   filter: drop-shadow(2px 4px 6px black);
-}/*# sourceMappingURL=styles.css.map */
+}
